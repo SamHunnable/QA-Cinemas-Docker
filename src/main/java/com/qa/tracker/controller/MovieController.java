@@ -18,7 +18,7 @@ public class MovieController {
 	MovieService movieService;
 	
 	@RequestMapping("/get")
-	public List<Movie> getAllTrainers() {
+	public List<Movie> getAllMovies() {
 		return movieService.getAllMovies();
 	}
 	
