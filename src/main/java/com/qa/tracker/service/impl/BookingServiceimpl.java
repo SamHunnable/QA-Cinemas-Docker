@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import com.google.gson.Gson;
 import com.qa.tracker.entity.Booking;
 import com.qa.tracker.repository.BookingRepository;
-import com.qa.tracker.repository.MovieRepository;
 import com.qa.tracker.service.BookingService;
 
 @Service
@@ -17,13 +16,13 @@ public class BookingServiceimpl implements BookingService {
 	@Autowired
 	BookingRepository bookingRepository;
 	
-	
+	@Override
 	public List<Booking> getAllBookings() {
 	  return bookingRepository.findAll();
 	}
 
 
-	
+	@Override
 	public Booking getBookingById(Integer bookingId) {
 		return bookingRepository.findOne(bookingId);
 	}

@@ -40,11 +40,12 @@ public class App {
 		Movie film = new Movie("title1","genre1","classification1");
 		film = movieRepository.save(film);
 	
+		Showing showing = new Showing(date);
+		showing = showingRepository.save(showing);
+		
 		Booking booking = new Booking(1,0,1,1);
 		booking = bookingRepository.save(booking);
-    
-		Showing showing = new Showing(date,1);
-		showing = showingRepository.save(showing);
+
 
 	}
 }
