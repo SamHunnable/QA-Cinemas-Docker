@@ -31,11 +31,9 @@ mvn clean package docker:build
 Then run:
 
 ~~~
-docker run --name trainer-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=trainer -e MYSQL_USER=trainer_user -e MYSQL_PASSWORD=trainer_pass -d mysql:5.6
+docker run --name qacinemas-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=qacinemas -e MYSQL_USER=user -e MYSQL_PASSWORD=pass -d mysql:5.6
 
-docker run -p 8080:8080 --name trainer-app --link trainer-mysql:mysql -d trainer/trainer-tracker
-
-
+docker run -p 8080:8080 --name qa-cinemas --link qacinemas-mysql:mysql -d qacinemas/qa-cinemas
 ~~~
 
 To see all containers including ones that have exited:
@@ -47,9 +45,9 @@ docker ps -a
 If there is an error you can check the logs by running the relevant line:
 
 ~~~
-docker logs trainer-mysql
+docker logs qacinemas-mysql
 
-docker logs trainer-app
+docker logs qa-cinemas
 ~~~
 
 In order to reset you will need to close and remove all containers:

@@ -1,48 +1,13 @@
-<html lang="en" xmlns:align-content="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Movie Carousel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-<div style="text-align:left">
-  <img width="100" src="{{jWick}}">
-</div>
-
-
-
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-  <div class="carousel-inner" style="height: auto; width: 100%; height: 600px">
-    <div class="item active" align-content: center>
-      <img [src]="jWick" alt="wickmeister" style="margin: auto">
-    </div>
-
-    <div class="item">
-      <img [src]="jWick" alt="wickmeister" style="margin: auto">
-    </div>
-
-    <div class="item">
-      <img [src]="jWick" style="margin: auto">
-    </div>
-  </div>
-
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <div class="glyphicon glyphicon-chevron-left"></div>
-    <div class="sr-only">Previous</div>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <div class="glyphicon glyphicon-chevron-right"></div>
-    <div class="sr-only">Next</div>
-  </a>
-</div>
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+    <li><img src="{{img1}}" alt="Lake" title="Lake" id="wows1_0"/></li>
+    <li><img src="{{img2}}" alt="Landscape" title="Landscape" id="wows1_1"/></li>
+    <li><img src="{{img3}}" alt="Sunset" title="Sunset" id="wows1_2"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="Lake"><span><img src="data1/tooltips/lake.jpg" alt="Lake"/>1</span></a>
+    <a href="#" title="Landscape"><span><img src="data1/tooltips/landscape.jpg" alt="Landscape"/>2</span></a>
+    <a href="#" title="Sunset"><span><img src="data1/tooltips/sunset.jpg" alt="Sunset"/>3</span></a>
+  </div></div>
+<div class="ws_shadow"></div>
+</div>  

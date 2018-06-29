@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.qa.tracker</groupId>
-	<artifactId>trainer-tracker</artifactId>
+	<artifactId>qa-cinemas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -19,7 +19,7 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.qa.tracker.App</start-class>
-		<docker.image.prefix>trainer</docker.image.prefix>
+		<docker.image.prefix>qacinemas</docker.image.prefix>
 	</properties>
 
 	<dependencies>

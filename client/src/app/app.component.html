@@ -1,4 +1,44 @@
-<div style="text-align:center;">
+<div>
+  <img style ="width:150px" src="{{myLogo}}">
+  <input style="text-align: left; position: absolute; right: 0;" type="text" name="search" placeholder="Search..">
+</div>
+
+
+  <table class="table">
+    <tr class ="tr">
+      <td><button class= "button" type="button" routerLink="/home">Home</button></td>
+      <td><button class= "button" type="button" routerLink="/film">Films</button></td>
+      <td><button class= "button" type="button">Price</button></td>
+      <td><button class= "button" type="button" routerLink="/about">About</button></td>
+      <td><button class= "button" type="button">QA Bois</button></td>
+</tr>
+</table>
+
+<router-outlet></router-outlet>
+
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2016 - All Rights with Webenlance</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#">webenlance.com</a></li>
+        <li><a href="#" routerLink="/about">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div style="text-align:center;">
   <img width="100" src="https://www.verdict.co.uk/wp-content/uploads/2017/10/shutterstock_384996514.jpg">
 </div>
 <div style="text-align:center">
@@ -26,4 +66,4 @@
    <h2><a routerLink="/about">About</a></h2>
  </li>
 </ul>
-</div>
+</div> -->
