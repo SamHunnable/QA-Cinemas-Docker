@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'QA Cinemas';
+
+  myLogo:string="assets/images/logo.png";
 }

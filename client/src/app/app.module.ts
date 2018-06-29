@@ -10,6 +10,7 @@ import { FilmPageComponent } from './components/film-page/film-page.component';
 import { FilmDetailComponent } from './components/film-detail/film-detail.component';
 import {FilmService}   from './service/film.service';
 
+
 const appRoutes:Routes=[
 {path: '', redirectTo: '/home', pathMatch: 'full' },
 {path: 'home', component:HomePageComponent },
@@ -32,6 +33,7 @@ const appRoutes:Routes=[
     HttpModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
+
   ],
   providers: [FilmService],
   bootstrap: [AppComponent]
