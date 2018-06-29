@@ -1,4 +1,6 @@
 export class Film {
-  id: number;
-  name: string;
+  movieID: number;
+  movieTitle: string;
+  movieGenre: string;
+  movieClassification: string;
 }

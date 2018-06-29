@@ -12,7 +12,7 @@ import{Film}  from '../film';
 
 
 export class FilmService {
-    private baseUrl:string='http://localhost:8080/api';
+    private baseUrl:string='http://localhost:8080';
     private headers = new Headers({'Content-Type':'application/json'});
     private options = new RequestOptions({headers:this.headers});
     private film = new Film();
@@ -20,12 +20,12 @@ export class FilmService {
 
     getFilms(){
 
-      return this._http.get(this.baseUrl+'/films',this.options).map((response:Response)=>response.json())
+      return this._http.get(this.baseUrl+'/movie/get',this.options).map((response:Response)=>response.json())
         .catch(this.errorHandler);
     }
     getFilm(id:Number){
 
-      return this._http.get(this.baseUrl+'/film/'+id,this.options).map((response:Response)=>response.json())
+      return this._http.get(this.baseUrl+'/movie/get/'+id,this.options).map((response:Response)=>response.json())
         .catch(this.errorHandler);
     }
     deleteFilm(id:Number){

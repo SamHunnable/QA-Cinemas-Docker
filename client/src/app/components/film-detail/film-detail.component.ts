@@ -12,9 +12,13 @@ export class FilmDetailComponent implements OnInit {
   constructor(private _rotuer:Router) { }
 
    film: Film = {
-    id: 1,
-    name: 'film number 1',
+     movieID: number;
+     movieTitle: string;
+     movieGenre: string;
+     movieClassification: string;
   }
+
+
   ngOnInit() {
   }
 
